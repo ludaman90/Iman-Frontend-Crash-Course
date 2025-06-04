@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Colour */
+h2 {
+  color: blue;
+  background-color: rgb(242, 242, 89);
+}
+
+/* Width and height */
+#first-form {
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: orange;
+
+  /* Avoid height but appropriately use it when needed. */
+
+  /* fonts */
+  font-size: 16px;
+  font-weight: bold;
+  font-family: inter, sans-serif;
+
+  /* Border */
+  border: 8px solid yellow;
+}
+
+.box {
+  width: 800px;
+  border: 1.5px solid black;
+  padding: 16px 8px;
+  margin: 16px 8px;
+  box-sizing: border-box;
+}
+
+.input4 {
+  color: white;
+  background-color: black;
+  position: relative;
+}
+
+.title {
+  font-size: 52px;
+}
+
+.paragraph {
+  font-size: 24;
+}
+
+/* Desktops */
+@media (max-width: 1280px) {
+  .title {
+    font-size: 54px;
+  }
+
+  .paragraph {
+    font-size: 40px;
+  }
+}
+
+/* Laptops */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .paragraph {
+    font-size: 34px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+
+  .paragraph {
+    font-size: 26px;
+  }
+}
+
+/* Large smartphones */
+@media (max-width: 640px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .paragraph {
+    font-size: 24px;
+  }
+}
+/* Alternative Large smartphones */
+@media (max-width: 530px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+}
+
+/* small smartphones */
+@media (max-width: 472px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+/* smaller smartphones */
+@media (max-width: 390px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+}
+/* smallest smartphones */
+@media (max-width: 340px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 16px;
+  }
+}
+/* Alternative smallest smartphones */
+@media (max-width: 310px) {
+  .title {
+    font-size: 17px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+}
+
+button {
+  transition: 300ms;
+}
+
+button:hover {
+  opacity: 50%;
+  background-color: blue;
+  padding: 4px;
+}
+
+b::after {
+  content: " is my first name ";
+}
+
+.Scroll-Down {
+  transform: translateY(16px);
+  animation: pointdown 1000ms infinite alternate-reverse;
+}
+
+@keyframes pointdown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(16px);
+  }
+}
